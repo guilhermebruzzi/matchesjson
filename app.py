@@ -23,6 +23,8 @@ class Team(db.Model):
 class Match(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     dt_of_match = db.Column(db.DateTime)
+    where = db.Column(db.Unicode(255), nullable=False)
+    link_of_match = db.Column(db.String(255), nullable=False)
     home_team_id = db.Column(db.Integer, db.ForeignKey('team.id'), nullable=False)
     guest_team_id = db.Column(db.Integer, db.ForeignKey('team.id'), nullable=False)
     home_team_score = db.Column(db.Integer, nullable=False)
@@ -33,8 +35,8 @@ class Match(db.Model):
 db.create_all()
 
 manager = APIManager(app, flask_sqlalchemy_db=db)
-manager.create_api(Team, methods=['GET', 'POST', 'DELETE'])
-manager.create_api(Match, methods=['GET', 'POST', 'DELETE'])
+manager.create_api(Team, methods=['GET', 'POST', 'DELETE'], results_per_page=None)
+manager.create_api(Match, methods=['GET', 'POST', 'DELETE'], results_per_page=None)
 
 cors = CORS(app, resources={r"*": {"origins": "*"}})
 
