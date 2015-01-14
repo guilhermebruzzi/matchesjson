@@ -9,3 +9,6 @@ run_paralelo: clean
 
 run: clean
 	@python app.py
+
+db:
+	@mysql -u root -e 'CREATE DATABASE IF NOT EXISTS matches;'

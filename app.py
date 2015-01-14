@@ -3,13 +3,44 @@
 import os
 from flask import Flask
 from flask_cors import CORS
+from flask.ext.sqlalchemy import SQLAlchemy
+from flask.ext.restless import APIManager
 
+# Create the Flask application and the Flask-SQLAlchemy object.
 app = Flask(__name__)
-cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 
-@app.route("/api/matches/")
-def list_matches():
-  return "user example"
+app.config['DEBUG'] = os.environ.get('DEBUG', "True") == "True"
+local_connection = "mysql+pymysql://root:@localhost/matches?charset=utf8&use_unicode=0"
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('SQLALCHEMY_DATABASE_URI', local_connection)
+
+db = SQLAlchemy(app)
+
+class Team(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.Unicode(255), unique=True)
+    shield = db.Column(db.String(255))
+
+class Match(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    dt_of_match = db.Column(db.DateTime)
+    home_team_id = db.Column(db.Integer, db.ForeignKey('team.id'), nullable=False)
+    guest_team_id = db.Column(db.Integer, db.ForeignKey('team.id'), nullable=False)
+    home_team_score = db.Column(db.Integer, nullable=False)
+    guest_team_score = db.Column(db.Integer, nullable=False)
+    home_team = db.relationship(Team, foreign_keys=[home_team_id], backref='matches_as_home_team')
+    guest_team = db.relationship(Team, foreign_keys=[guest_team_id], backref='matches_as_guest_team')
+
+db.create_all()
+
+manager = APIManager(app, flask_sqlalchemy_db=db)
+manager.create_api(Team, methods=['GET', 'POST', 'DELETE'])
+manager.create_api(Match, methods=['GET', 'POST', 'DELETE'])
+
+cors = CORS(app, resources={r"*": {"origins": "*"}})
+
+@app.route("/")
+def index():
+  return "Use RESTFUL /api/match e /api/team para criar/ver/deletar/listar"
 
 if __name__ == '__main__':
     # Bind to PORT if defined, otherwise default to 5000.
