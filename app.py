@@ -6,10 +6,10 @@ from flask_cors import CORS
 from flask.ext.sqlalchemy import SQLAlchemy
 from flask.ext.restless import APIManager
 
-# Create the Flask application and the Flask-SQLAlchemy object.
 app = Flask(__name__)
 
 app.config['DEBUG'] = os.environ.get('DEBUG', "True") == "True"
+
 local_connection = "mysql://root:@localhost/matches?charset=utf8&use_unicode=0"
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('SQLALCHEMY_DATABASE_URI', local_connection)
 

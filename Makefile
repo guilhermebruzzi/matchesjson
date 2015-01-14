@@ -4,9 +4,6 @@ clean:
 kill_run:
 	@ps aux | awk '(make run && $$0 !~ /awk/){ system("kill -9 "$$2) }'
 
-run_paralelo: clean
-	@foreman start
-
 run: clean
 	@python app.py
 
