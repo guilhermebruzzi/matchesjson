@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import os
-from flask import Flask
+from flask import Flask, Response
 from flask_cors import CORS
 from flask.ext.sqlalchemy import SQLAlchemy
 from flask.ext.restless import APIManager
@@ -49,16 +49,22 @@ def index():
            u"Json baseado nas rotas RESTFUL /api/match e /api/team para criar/ver/deletar/listar"
 
 
+def read_file(filename, charset='utf-8'):
+    json_value = ""
+    with open(filename, 'r') as f:
+        json_value = f.read().decode(charset)
+    return json_value
+
+
 @app.route("/matches.json")
 def list_matches():
-    json_value = ""
+    json_value = read_file('matches.json')
 
-    with open('matches.json', 'r') as content_file:
-        json_value = content_file.read()
-
-    return app.response_class(
+    rv = Response(
         json_value,
-        mimetype='application/json')
+        content_type='application/json; charset=utf-8')
+
+    return rv
 
 
 if __name__ == '__main__':
