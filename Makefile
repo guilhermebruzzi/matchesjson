@@ -9,3 +9,6 @@ run: clean
 
 db:
 	@mysql -u root -e 'CREATE DATABASE IF NOT EXISTS matches;'
+
+setup: db
+	@pip install -r requirements.txt

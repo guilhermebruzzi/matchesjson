@@ -3,3 +3,4 @@ Flask-Cors==1.10.2
 Flask-SQLAlchemy==2.0
 Flask-Restless==0.15.1
 MySQL-python==1.2.5
+PyMySQL==0.6.3
