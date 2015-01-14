@@ -45,7 +45,20 @@ cors = CORS(app, resources={r"*": {"origins": "*"}})
 
 @app.route("/")
 def index():
-    return "Use RESTFUL /api/match e /api/team para criar/ver/deletar/listar"
+    return u"Use o /matches.json no exercicio." \
+           u"Json baseado nas rotas RESTFUL /api/match e /api/team para criar/ver/deletar/listar"
+
+
+@app.route("/matches.json")
+def list_matches():
+    json_value = ""
+
+    with open('matches.json', 'r') as content_file:
+        json_value = content_file.read()
+
+    return app.response_class(
+        json_value,
+        mimetype='application/json')
 
 
 if __name__ == '__main__':
