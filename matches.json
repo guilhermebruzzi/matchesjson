@@ -6,7 +6,8 @@
                 "id": 1,
                 "name": "Fluminense",
                 "shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/fluminense_30x30.png",
-                "large_shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/fluminense_60x60.png"
+                "large_shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/fluminense_60x60.png",
+                "color": "#177d49"
             },
             "guest_team_id": 1,
             "guest_team_score": 3,
@@ -14,7 +15,8 @@
                 "id": 2,
                 "name": "Cruzeiro",
                 "shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/cruzeiro_30x30.png",
-                "large_shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/cruzeiro_60x60.png"
+                "large_shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/cruzeiro_60x60.png",
+                "color": "#0099cc"
             },
             "home_team_id": 2,
             "home_team_score": 2,
@@ -28,7 +30,8 @@
                 "id": 11,
                 "name": "Botafogo",
                 "shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/botafogo_30x30.png",
-                "large_shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/botafogo_60x60.png"
+                "large_shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/botafogo_60x60.png",
+                "color": "#000000"
             },
             "guest_team_id": 11,
             "guest_team_score": 0,
@@ -36,7 +39,8 @@
                 "id": 1,
                 "name": "Fluminense",
                 "shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/fluminense_30x30.png",
-                "large_shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/fluminense_60x60.png"
+                "large_shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/fluminense_60x60.png",
+                "color": "#177d49"
             },
             "home_team_id": 1,
             "home_team_score": 1,
@@ -50,7 +54,8 @@
                 "id": 21,
                 "name": "Santos",
                 "shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/santos_30x30.png",
-                "large_shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/santos_60x60.png"
+                "large_shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/santos_60x60.png",
+                "color": "#000000"
             },
             "guest_team_id": 21,
             "guest_team_score": 1,
@@ -58,7 +63,8 @@
                 "id": 31,
                 "name": "Vitória",
                 "shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/vitoria_30x30.png",
-                "large_shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/vitoria_60x60.png"
+                "large_shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/vitoria_60x60.png",
+                "color": "#a80000"
             },
             "home_team_id": 31,
             "home_team_score": 0,
@@ -72,7 +78,8 @@
                 "id": 41,
                 "name": "Figueirense",
                 "shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/figueirense_30x30.png",
-                "large_shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/figueirense_60x60.png"
+                "large_shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/figueirense_60x60.png",
+                "color": "#177d49"
             },
             "guest_team_id": 41,
             "guest_team_score": 11,
@@ -80,7 +87,8 @@
                 "id": 11,
                 "name": "Botafogo",
                 "shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/botafogo_30x30.png",
-                "large_shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/botafogo_60x60.png"
+                "large_shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/botafogo_60x60.png",
+                "color": "#000000"
             },
             "home_team_id": 11,
             "home_team_score": 0,
@@ -94,7 +102,8 @@
                 "id": 1,
                 "name": "Fluminense",
                 "shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/fluminense_30x30.png",
-                "large_shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/fluminense_60x60.png"
+                "large_shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/fluminense_60x60.png",
+                "color": "#177d49"
             },
             "guest_team_id": 1,
             "guest_team_score": 4,
@@ -102,7 +111,8 @@
                 "id": 2,
                 "name": "Cruzeiro",
                 "shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/cruzeiro_30x30.png",
-                "large_shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/cruzeiro_60x60.png"
+                "large_shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/cruzeiro_60x60.png",
+                "color": "#0099cc"
             },
             "home_team_id": 2,
             "home_team_score": 2,
@@ -116,7 +126,8 @@
                 "id": 11,
                 "name": "Botafogo",
                 "shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/botafogo_30x30.png",
-                "large_shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/botafogo_60x60.png"
+                "large_shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/botafogo_60x60.png",
+                "color": "#000000"
             },
             "guest_team_id": 11,
             "guest_team_score": 3,
@@ -124,7 +135,8 @@
                 "id": 1,
                 "name": "Fluminense",
                 "shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/fluminense_30x30.png",
-                "large_shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/fluminense_60x60.png"
+                "large_shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/fluminense_60x60.png",
+                "color": "#177d49"
             },
             "home_team_id": 1,
             "home_team_score": 1,
@@ -138,7 +150,8 @@
                 "id": 21,
                 "name": "Santos",
                 "shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/santos_30x30.png",
-                "large_shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/santos_60x60.png"
+                "large_shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/santos_60x60.png",
+                "color": "#000000"
             },
             "guest_team_id": 21,
             "guest_team_score": 1,
@@ -146,7 +159,8 @@
                 "id": 31,
                 "name": "Vitória",
                 "shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/vitoria_30x30.png",
-                "large_shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/vitoria_60x60.png"
+                "large_shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/vitoria_60x60.png",
+                "color": "#a80000"
             },
             "home_team_id": 31,
             "home_team_score": 2,
@@ -160,7 +174,8 @@
                 "id": 41,
                 "name": "Figueirense",
                 "shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/figueirense_30x30.png",
-                "large_shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/figueirense_60x60.png"
+                "large_shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/figueirense_60x60.png",
+                "color": "#177d49"
             },
             "guest_team_id": 41,
             "guest_team_score": 1,
@@ -168,7 +183,8 @@
                 "id": 11,
                 "name": "Botafogo",
                 "shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/botafogo_30x30.png",
-                "large_shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/botafogo_60x60.png"
+                "large_shield": "http://s.glbimg.com//es/sde/f/organizacoes/2014/04/14/botafogo_60x60.png",
+                "color": "#000000"
             },
             "home_team_id": 11,
             "home_team_score": 2,
