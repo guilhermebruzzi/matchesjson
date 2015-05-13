@@ -3,51 +3,17 @@
 import os
 from flask import Flask, Response
 from flask_cors import CORS
-from flask.ext.sqlalchemy import SQLAlchemy
-from flask.ext.restless import APIManager
+from flask_cache_response_decorator import cache
 
 app = Flask(__name__)
 
 app.config['DEBUG'] = os.environ.get('DEBUG', "True") == "True"
 
-local_connection = "mysql+pymysql://root:@localhost/matches?charset=utf8"
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('SQLALCHEMY_DATABASE_URI', local_connection)
-
-db = SQLAlchemy(app)
-
-
-class Team(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.Unicode(255), unique=True)
-    shield = db.Column(db.String(255))
-
-
-class Match(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    dt_of_match = db.Column(db.DateTime)
-    where = db.Column(db.Unicode(255), nullable=False)
-    link_of_match = db.Column(db.String(255), nullable=False)
-    home_team_id = db.Column(db.Integer, db.ForeignKey('team.id'), nullable=False)
-    guest_team_id = db.Column(db.Integer, db.ForeignKey('team.id'), nullable=False)
-    home_team_score = db.Column(db.Integer, nullable=False)
-    guest_team_score = db.Column(db.Integer, nullable=False)
-    home_team = db.relationship(Team, foreign_keys=[home_team_id], backref='matches_as_home_team')
-    guest_team = db.relationship(Team, foreign_keys=[guest_team_id], backref='matches_as_guest_team')
-
-db.create_all()
-
-manager = APIManager(app, flask_sqlalchemy_db=db)
-manager.create_api(Team, methods=['GET', 'POST', 'DELETE'], results_per_page=None)
-manager.create_api(Match, methods=['GET', 'POST', 'DELETE'], results_per_page=None)
-
 cors = CORS(app, resources={r"*": {"origins": "*"}})
-
 
 @app.route("/")
 def index():
-    return u"Use o /matches.json no exercicio." \
-           u"Json baseado nas rotas RESTFUL /api/match e /api/team para criar/ver/deletar/listar"
-
+    return u"Use o /matches.json no exercicio."
 
 def read_file(filename, charset='utf-8'):
     json_value = ""
@@ -57,6 +23,7 @@ def read_file(filename, charset='utf-8'):
 
 
 @app.route("/matches.json")
+@cache(expires=60)
 def list_matches():
     json_value = read_file('matches.json')
 
