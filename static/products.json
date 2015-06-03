@@ -1,0 +1,34 @@
+{
+    "home": {
+        "color": "#0669de",
+        "link": "http://www.globo.com/"
+    },
+    "g1": {
+        "color": "#A80000",
+        "link": "http://g1.globo.com/index.html"
+    },
+    "ge": {
+        "color": "#3B9C00",
+        "link": "http://globoesporte.globo.com/"
+    },
+    "gshow": {
+        "color": "#EC7D00",
+        "link": "http://gshow.globo.com/"
+    },
+    "techtudo": {
+        "color": "#FD8A00",
+        "link": "http://www.techtudo.com.br/"
+    },
+    "famosos": {
+        "color": "#FF7F00",
+        "link": "http://famosos.globo.com/"
+    },
+    "globotv": {
+        "color": "#87b169",
+        "link": "http://globotv.globo.com/"
+    },
+    "globosatplay": {
+        "color": "#4576a1",
+        "link": "http://globosatplay.globo.com/"
+    }
+}
