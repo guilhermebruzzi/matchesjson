@@ -15,13 +15,15 @@ app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 60
 
 cors = CORS(app, resources={r"*": {"origins": "*"}})
 
+
 @app.route("/")
 def index():
     return u"Use o /matches.json no exercicio."
 
+
 def add_charset_to_json_static_files(response):
-    if (request.path and
-        re.search(r'\.(json)$', request.path)):
+    if (request.path and 
+            re.search(r'\.(json)$', request.path)):
         response.headers['Content-Type'] = 'application/json; charset=utf-8'
 
     return response
