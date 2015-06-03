@@ -1,34 +1,50 @@
 {
     "home": {
         "color": "#0669de",
-        "link": "http://www.globo.com/"
+        "link": "http://www.globo.com/",
+        "width": "55px",
+        "height": "25px"
     },
     "g1": {
         "color": "#A80000",
-        "link": "http://g1.globo.com/index.html"
+        "link": "http://g1.globo.com/index.html",
+        "width": "25px",
+        "height": "25px"
     },
     "ge": {
         "color": "#3B9C00",
-        "link": "http://globoesporte.globo.com/"
+        "link": "http://globoesporte.globo.com/",
+        "width": "25px",
+        "height": "25px"
     },
     "gshow": {
         "color": "#EC7D00",
-        "link": "http://gshow.globo.com/"
+        "link": "http://gshow.globo.com/",
+        "width": "25px",
+        "height": "25px"
     },
     "techtudo": {
         "color": "#FD8A00",
-        "link": "http://www.techtudo.com.br/"
+        "link": "http://www.techtudo.com.br/",
+        "width": "25px",
+        "height": "25px"
     },
     "famosos": {
         "color": "#FF7F00",
-        "link": "http://famosos.globo.com/"
+        "link": "http://famosos.globo.com/",
+        "width": "55px",
+        "height": "25px"
     },
     "globotv": {
         "color": "#87b169",
-        "link": "http://globotv.globo.com/"
+        "link": "http://globotv.globo.com/",
+        "width": "55px",
+        "height": "25px"
     },
     "globosatplay": {
         "color": "#4576a1",
-        "link": "http://globosatplay.globo.com/"
+        "link": "http://globosatplay.globo.com/",
+        "width": "55px",
+        "height": "25px"
     }
 }
