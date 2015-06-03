@@ -22,7 +22,7 @@ def index():
 
 
 def add_charset_to_json_static_files(response):
-    if (request.path and 
+    if (request.path and
             re.search(r'\.(json)$', request.path)):
         response.headers['Content-Type'] = 'application/json; charset=utf-8'
 
